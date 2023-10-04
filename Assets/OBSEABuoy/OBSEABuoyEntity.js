@@ -5,7 +5,7 @@ class OBSEABuoyEntity {
 
   isLoaded = false;
 
-  constructor(scene){
+  constructor(scene, onload){
     // https://www.youtube.com/watch?v=6LA8vEB47Nk&ab_channel=DirkTeucher
     const gltfLoader = new GLTFLoader();
     gltfLoader.load('/OBSEA/Assets/OBSEABuoy/OBSEABuoy.glb', (gltf) => {
@@ -19,6 +19,8 @@ class OBSEABuoyEntity {
       root.rotation.y = angleFix * Math.PI / 180;
       scene.add(root);
 
+      // Scale by half (probably right size)
+      root.scale.multiplyScalar(0.5);
       this.root = root;
 
       // Material AO
@@ -27,7 +29,24 @@ class OBSEABuoyEntity {
 
       this.isLoaded = true;
 
+      if(onload)
+        onload();
+
     });
+  }
+
+  setOpacity = (inOpacity) => {
+    this.recursiveSetOpacity(inOpacity, this.root.children[0]);
+    // this.root.children[0].material.opacity = inOpacity;
+    // this.root.children[0].material.transparent = true;
+  }
+
+  recursiveSetOpacity = (inOpacity, obj) => {
+    obj.material.opacity = inOpacity;
+    obj.material.transparent = true;
+    if (obj.children.length != 0){
+      obj.children.forEach(ch => this.recursiveSetOpacity(inOpacity, ch));
+    }
   }
 }
 
