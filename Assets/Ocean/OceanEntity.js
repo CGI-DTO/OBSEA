@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { Vector3 } from 'three';
-import { GLTFLoader } from 'https://threejs.org/examples/jsm/loaders/GLTFLoader.js';
+import { GLTFLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
 import {OceanVertShader, OceanFragShader} from '/OBSEA/Assets/Ocean/OceanShader.js';
 import { OceanParameters } from '/OBSEA/Assets/Ocean/OceanParams.js';
 
@@ -56,7 +56,7 @@ class OceanEntity {
 
     // Create video texture
     // https://blenderartists.org/t/animated-water-normal-map-tileable-looped/673140
-    // https://threejs.org/examples/?q=video#webgl_materials_video
+    // /OBSEA/lib/three.js/examples/?q=video#webgl_materials_video
     // https://github.com/mrdoob/three.js/blob/master/examples/webgl_materials_video.html
     let videoEl = document.createElement("video");
     videoEl.loop = true; videoEl.crossOrigin = 'anonymous'; videoEl.playsInline = true; videoEl.muted = "muted";

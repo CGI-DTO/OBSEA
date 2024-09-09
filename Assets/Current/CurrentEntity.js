@@ -1,5 +1,5 @@
 import * as THREE from 'three';
-import { OBJLoader } from 'https://threejs.org/examples/jsm/loaders/OBJLoader.js';
+import { OBJLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/OBJLoader.js';
 import { Vector3 } from 'three';
 
 class CurrentEntity {
