@@ -1,9 +1,9 @@
 import * as THREE from 'three';
-import Stats from 'https://threejs.org/examples/jsm/libs/stats.module.js';
-import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
-import { OBJLoader } from 'https://threejs.org/examples/jsm/loaders/OBJLoader.js';
-import { GLTFLoader } from 'https://threejs.org/examples/jsm/loaders/GLTFLoader.js';
-import { FBXLoader } from 'https://threejs.org/examples/jsm/loaders/FBXLoader.js'
+import Stats from '/OBSEA/lib/three.js/examples/jsm/libs/stats.module.js';
+import { OrbitControls } from '/OBSEA/lib/three.js/examples/jsm/controls/OrbitControls.js';
+import { OBJLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/OBJLoader.js';
+import { GLTFLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/GLTFLoader.js';
+import { FBXLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/FBXLoader.js'
 import { RosaVentsEntity } from '/OBSEA/Assets/Orientation/RosaVentsEntity.js';
 import { SandEntity } from '/OBSEA/Assets/Terrain/SandEntity.js';
 import { SkyboxEntity } from '/OBSEA/Assets/Skybox/SkyboxEntity.js';

@@ -1,10 +1,10 @@
-// https://threejs.org/examples/#webgl_geometry_text
+// /OBSEA/lib/three.js/examples/#webgl_geometry_text
 // https://dev.to/emurtzle/intro-to-threejs--interactive-text-exampletutorial-4d1k
 
 // Use this to generate a new font: https://gero3.github.io/facetype.js/
 import * as THREE from 'three';
-import { FontLoader } from 'https://threejs.org/examples/jsm/loaders/FontLoader.js';
-import { TextGeometry } from 'https://threejs.org/examples/jsm/geometries/TextGeometry.js';
+import { FontLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/FontLoader.js';
+import { TextGeometry } from '/OBSEA/lib/three.js/examples/jsm/geometries/TextGeometry.js';
 
 class TextMeshEntity {
 
@@ -34,7 +34,7 @@ class TextMeshEntity {
   // Loads the font and calls a function once its loaded
   loadFont = function(callback){
     const fontLoader = new FontLoader();
-    //fontLoader.load('https://threejs.org/examples/fonts/helvetiker_bold.typeface.json', (font) => {
+    //fontLoader.load('/OBSEA/lib/three.js/examples/fonts/helvetiker_bold.typeface.json', (font) => {
     fontLoader.load('/OBSEA/Assets/TextMesh/Helvetica 65 Medium_Regular.json', (font) => { 
       this.font = font;
       callback();

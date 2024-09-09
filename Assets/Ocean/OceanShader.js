@@ -18,7 +18,7 @@
 // https://brandenstrochinsky.blogspot.com/2016/06/water-effect.html
 // Screen space reflections (SSR)
 // https://www.youtube.com/watch?v=K2rs7K4y_sY&ab_channel=NullPointer
-// https://threejs.org/examples/?q=post#webgl_postprocessing_ssr
+// /OBSEA/lib/three.js/examples/?q=post#webgl_postprocessing_ssr
 // Mirror reflection
 // http://www.shiplab.hials.org/app/simulator/Elias/
 

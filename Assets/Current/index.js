@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import { OrbitControls } from 'https://threejs.org/examples/jsm/controls/OrbitControls.js';
-import { OBJLoader } from 'https://threejs.org/examples/jsm/loaders/OBJLoader.js';
+import { OrbitControls } from '/OBSEA/lib/three.js/examples/jsm/controls/OrbitControls.js';
+import { OBJLoader } from '/OBSEA/lib/three.js/examples/jsm/loaders/OBJLoader.js';
 import { RosaVentsEntity } from '/OBSEA/Assets/Orientation/RosaVentsEntity.js';
 
 function main() {
