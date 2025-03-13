@@ -2,7 +2,7 @@
 
   <div class="dropdown">
     <div class="dropbtnBackground">
-      <button @click="dropdownClick" class="dropbtn">
+      <button @click="dropdownClick" class="icon-svg dropbtn">
         <!-- <svg class="icon-svg nopointerevents" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
           <path class="cls-1" d="M249,42h8V469h-8V42Z" />
           <path class="cls-1" d="M466,251v10H41V251H466Zm0,0v10H41V251H466Z" />
@@ -107,8 +107,6 @@ export default {
   background-color: #f0f0f0;
   border-radius: 50%;
   border-width: 0;
-  width: 45px;
-  height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;

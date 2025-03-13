@@ -96,7 +96,7 @@ export default {
 .top-right {
     margin: 0;
     position: absolute;
-    top: 50px;
+    top: 10px;
     right: 10px;
   }
 
@@ -125,12 +125,7 @@ export default {
     justify-content: center;
   }
 
-  .icon-svg:hover{
-    border-width: 2px;
-    border-color: black;
-    border-style: solid;
-    border-radius: 50%;
-  }
+
 
 
   .north {
