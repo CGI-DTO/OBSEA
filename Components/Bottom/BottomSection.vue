@@ -150,11 +150,13 @@ export default {
   pointer-events: none;
 }
 .bottom-icons {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   padding: 10px;
   transition: all 0.3s ease;
+  z-index: 1;
 }
 
 button {

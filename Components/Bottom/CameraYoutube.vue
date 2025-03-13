@@ -10,5 +10,9 @@
     display: flex;
     justify-content: flex-end;
     pointer-events: all;
+
+    position: absolute;
+    right: 20px;
+    bottom: 140px;
   }
 </style>

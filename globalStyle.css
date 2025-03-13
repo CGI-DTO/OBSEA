@@ -123,3 +123,16 @@ html body {
 button {
   pointer-events: visible;
 }
+
+
+
+
+
+@media (max-width: 770px) or (max-height: 700px) {
+
+  .icon-svg {
+    width: 35px;
+    height: 35px;
+  }
+
+}
